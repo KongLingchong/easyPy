@@ -45,7 +45,7 @@ def crawling(web,label):
     data = soup.find_all(name = label)
     return data
 
-def picture(web2,label2):
+def cpicture(web2,label2):
     response2 = requests.get(web2)
     response2.encoding = "UTF-8"
     soup2 = bs4.BeautifulSoup(response2.content,"lxml")
